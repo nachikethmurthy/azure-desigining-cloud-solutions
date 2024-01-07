@@ -1,9 +1,11 @@
 # install VS code 
- - Install VS Code extension
+ - installation - link (https://code.visualstudio.com/download)
+ - Install VS Code extension - azure resource manager tools extension (https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+ - install git bash on your system(windows) : https://git-scm.com/download/win
  - Install CLI on the local PC:
 https://learn.microsoft.com/en-us/cli/azure/
 
-- verify the installation:
+- verify the installation (git bash (windows) /terminal  (mac)):
 `az --version`
 
 # Getting Started with Azure Resource Manager
