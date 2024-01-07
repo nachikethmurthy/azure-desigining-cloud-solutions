@@ -2,22 +2,15 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "storageName": {
-            "type": "string",
-            "minLength": 3,
-            "maxLength":24
-        },
-        "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]"
-        }
+
     },
     "functions": [],
-    "variables": {},
+    "variables": {
+    },
     "resources": [{
-        "name": "[parameters('storageName')]",
+        "name": "muewhwe1lkssdgsedd",
         "type": "Microsoft.Storage/storageAccounts",
-        "location": "[parameters('location')]",
+        "location": "East US",
         "apiVersion": "2023-01-01",
         "tags": {
             "displayName": "storageaccount"

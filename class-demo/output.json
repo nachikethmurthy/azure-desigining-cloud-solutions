@@ -13,9 +13,11 @@
         }
     },
     "functions": [],
-    "variables": {},
+    "variables": {
+        "uniqueStorageName": "[concat(parameters('storageName'),uniqueString(resourceGroup().id))]"
+    },
     "resources": [{
-        "name": "[parameters('storageName')]",
+        "name": "[variables('uniqueStorageName')]",
         "type": "Microsoft.Storage/storageAccounts",
         "location": "[parameters('location')]",
         "apiVersion": "2023-01-01",
@@ -28,5 +30,10 @@
             "tier": "Premium"
         }
     }],
-    "outputs": {}
+    "outputs": {
+        "storageEndpoint": {
+            "type": "object" ,
+            "value": "[reference(variables('uniqueStorageName')).primaryEndpoints]"
+        }
+    }
 }
