@@ -49,7 +49,7 @@ New-AzVm `
     -SshKeyName mySSHKey
 
 Invoke-AzVMRunCommand `
-   -ResourceGroupName 'myDemoGroup' `
+   -ResourceGroupName 'myResourceGroup' `
    -Name 'myVM2' `
    -CommandId 'RunShellScript' `
    -ScriptString 'sudo apt-get update && sudo apt-get install -y nginx'
