@@ -48,3 +48,12 @@ az deployment group create --name azuredeploy --resource-group myDemoGroup --tem
 # Assignment
 - Create a Linux VM using the ARM template (modify the settings)
 - Create Storage with type as - Blob using ARM template
+
+
+# 13 Jan Code
+
+
+```
+az group create --name myDemoGroup --location 'Central US'
+az deployment group create --name azuredeploy --resource-group myDemoGroup --template-file 13-jan-vm.json --parameters 13-jan-vm.parameters.json
+```
